@@ -44,6 +44,11 @@
       <div class="subscribe">
         <button>SUBSCRIBE NOW</button>
       </div>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
     </div>
   </div>
   <div id="top-section">
@@ -458,6 +463,60 @@
       </div>
     </div>
   </footer>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <h2>MENU</h2>
+      <button class="close-menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li>HOME</li>
+      <li>LATEST ARTICLES</li>
+      <li>AUTHORS</li>
+      <li>COMMUNITY</li>
+    </ul>
+    <div class="mobile-subscribe">
+      <button>
+        <img src="./images/icons/rocket-solid-full.png" alt="Rocket Icon" />
+        SUBSCRIBE NOW
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+    const closeMenu = document.querySelector('.close-menu');
+
+    if(hamburger) {
+      hamburger.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+        mobileMenuOverlay.classList.add('active');
+      });
+    }
+
+    if(closeMenu) {
+      closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+      });
+    }
+
+    if(mobileMenuOverlay) {
+      mobileMenuOverlay.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+      });
+    }
+  </script>
 </body>
 
 </html>
