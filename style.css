@@ -11,16 +11,13 @@ body {
   padding-top: 20px;
 }
 
-/*              TOP SECTION BACKGROUND             */
 #top-section {
   background-color: #fff085;
-  /* Matches the hero section yellow */
   padding-top: 0;
   padding-bottom: 20px;
   border-bottom: 4px solid black;
 }
 
-/*              NAV BAR             */
 #nav-bar .container {
   display: flex;
   justify-content: space-between;
@@ -112,7 +109,6 @@ body {
   color: #fff;
 }
 
-/* Transation for the nav bar */
 .home:hover,
 .latest-articles:hover,
 .authors:hover,
@@ -120,7 +116,6 @@ body {
   color: #e61f25;
 }
 
-/*      Hero section     */
 #hero-section {
   padding: 20px 0 40px;
 }
@@ -231,7 +226,6 @@ body {
     box-shadow 0.3s;
 }
 
-/*    transition  */
 #hero-section .image:hover {
   transform: translate(15px, 15px) rotate(3deg);
   box-shadow: 0px 0px 0px #000;
@@ -351,7 +345,6 @@ body {
   align-self: flex-start;
 }
 
-/*      Section Headers     */
 #content-layout .section-header {
   display: flex;
   align-items: center;
@@ -378,7 +371,6 @@ body {
   box-shadow: 4px 4px 0px #000;
 }
 
-/*      Article Cards     */
 .article-card {
   background-color: white;
   border: 4px solid black;
@@ -530,7 +522,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Trending List */
 .trending-list {
   display: flex;
   flex-direction: column;
@@ -804,7 +795,6 @@ body {
   filter: brightness(0);
 }
 
-/*      Join Section     */
 #join-section {
   background-color: #f4f4f4;
   padding: 80px 0;
@@ -914,7 +904,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   transition: transform 0.2s ease;
 }
 
@@ -955,7 +944,6 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 15px;
-  cursor: pointer;
   text-transform: uppercase;
   font-family: inherit;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
@@ -1022,7 +1010,6 @@ body {
   height: 40px;
   object-fit: cover;
   border: 2px solid black;
-  /* ensure square corners not rounded */
 }
 
 #join-section .test-info {
@@ -1218,7 +1205,6 @@ body {
   text-decoration: none;
 }
 
-/* Default state for hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
