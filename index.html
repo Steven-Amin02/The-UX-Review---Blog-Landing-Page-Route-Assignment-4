@@ -464,7 +464,6 @@
     </div>
   </footer>
 
-  <!-- Mobile Menu Overlay -->
   <div class="mobile-menu-overlay"></div>
   <div class="mobile-menu">
     <div class="mobile-menu-header">
@@ -489,34 +488,6 @@
       </button>
     </div>
   </div>
-
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
-    const closeMenu = document.querySelector('.close-menu');
-
-    if(hamburger) {
-      hamburger.addEventListener('click', () => {
-        mobileMenu.classList.add('active');
-        mobileMenuOverlay.classList.add('active');
-      });
-    }
-
-    if(closeMenu) {
-      closeMenu.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        mobileMenuOverlay.classList.remove('active');
-      });
-    }
-
-    if(mobileMenuOverlay) {
-      mobileMenuOverlay.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        mobileMenuOverlay.classList.remove('active');
-      });
-    }
-  </script>
 </body>
 
 </html>
